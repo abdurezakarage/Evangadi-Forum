@@ -77,7 +77,7 @@ const navigate= useNavigate()
       setPosted(true);
       setTimeout(() => {
         setPosted(false);
-      }, 800);
+      }, 500);
     } catch (error) {
       console.error(error);
       setError("Failed to post your answer. Please try again.");

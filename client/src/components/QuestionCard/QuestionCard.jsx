@@ -11,7 +11,7 @@ function QuestionCard({ question }) {
   const { updateEditState, updateQuestion } = useContext(EditContext);
   const navigate = useNavigate();
   const user = JSON.parse(localStorage.getItem("user"));
-
+console.log(user);
   const handleEditClick = (e) => {
     e.stopPropagation();
     updateEditState(true);
@@ -41,7 +41,7 @@ function QuestionCard({ question }) {
 
       <div>
         {/* Arrow/edit icon */}
-        {user.userid == question.user_id ? (
+        {user.userid === question.user_id ? (
           <FaRegEdit onClick={handleEditClick} className={classes.edit__icon} />
         ) : (
           <MdOutlineKeyboardArrowRight

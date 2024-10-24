@@ -35,7 +35,7 @@ function RgisterForm() {
         email: email,
         password: password,
       });
-      alert("Registered Successfully!");
+      // alert("Registered Successfully!");
       navigate("/login");
     } catch (error) {
       alert("Something went wrong");

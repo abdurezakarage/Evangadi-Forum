@@ -30,8 +30,8 @@ function LoginForm() {
         email: email,
         password: password,
       });
-      alert("Login Successfully!");
-     
+   
+  
       const user = {
         username: data.username,
         userid: data.userid,

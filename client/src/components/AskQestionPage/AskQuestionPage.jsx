@@ -62,11 +62,11 @@ const QuestionPage = () => {
       setTimeout(() => {
         setIsLoading(false);
         setSubmission(true);
-      }, 700);
+      }, 500);
       setTimeout(() => {
         setSubmission(false);
         navigate("/");
-      }, 1500);
+      }, 500);
     } catch (error) {
       console.error(error);
       setError("Failed to submit the question. Please try again.");
